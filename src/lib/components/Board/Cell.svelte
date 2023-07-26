@@ -1,16 +1,20 @@
 <script>
     export let value;
-    export let isGroupOf3 = false;
+    export let columnGap;
 </script>
 
 <span class="cell">
     {value}
 </span>
 
+<!-- <span class="cell" style={columnGap ? 'margin-right: 1rem;' : ''}>
+    {value}
+</span> -->
+
 <style>
     .cell {
-        width: 3rem; /* Ancho de cada celda */
-        height: 3rem; /* Alto de cada celda */
+        /* width: 3rem;
+        height: 3rem; */
         display: flex;
         justify-content: center;
         align-items: center;
